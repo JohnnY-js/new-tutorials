@@ -36,7 +36,7 @@ Exemplo do código atual do xp da mensagem:
 //Se a quantidade de caracteres diferentes for maior/igual a 7 ou maior/igual a 12, gera número aleatório entre 1 e 3 (tornando o máximo de xp possível de se obter 9 por mensagem.)
 ```
 
-##### Passar de Nível
+#### Passar de Nível
 Agora que verificamos o xp que a mensagem vale, salve no perfil do usuário o xp e então vamos verificar se ele pode passar de nível.
 ```
     let xp = usuario.xp //Pega o xp do usuário
@@ -58,6 +58,8 @@ Se ele passou de nível, você pode enviar uma mensagem...
 ```
 
 ![Final](https://i.imgur.com/0eWmgIB.png)
+
+### Resultado Final
 ```
 const removerDuplicados = s => s.split("").sort().reduce((a,b)=>(a[a.length-1]!=b)?(a+b):a,"")
 	let mensagemPura = removerDuplicados(message.content)
