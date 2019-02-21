@@ -13,7 +13,7 @@ Logo abaixo você tera que fazer pequenas coisas para detectar os comandos!
 ```js
 fs.readdir('./commands', (erro, file) => {
   if (erro) console.log(erro.stack);
-  let jsf = file.filter(f => s.flice('.').pop() === 'js');//isso fara com que apenas pega os comandos feitos em ".js"
+  let jsf = file.filter(f => f.slice('.').pop() === 'js');//isso fara com que apenas pega os comandos feitos em ".js"
   if (jsf.length < 0) console.log('Nenhum comando foi encontrado!');//caso não tenha nenhum comando ou possivelmente algum erro
   jsf.forEach((f, i) => {
     let p = require(`./commands/${f}`);
