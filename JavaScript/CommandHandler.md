@@ -38,17 +38,16 @@ Bem o handler esta feito (bem simples) !
 
 # Montagem de comando
 
-```js
-var Discord = require('discord.js');
+```jsvar Discord = require('discord.js');
 
 module.exports = {
   conf: {
-    name:    ''//nome do arquivo
-    aliases: []//aliases desejadas, isso é: uma segunda forma de execução do comando! Se não desejar nenhuma aliase apenas deixar vázio "[]"
-    desc:    ''//descrição do comando
-    usage:   ''//forma de utilização
-    grupo:   ''//grupo em que se encontra o comando, ex: Administração,
-    membro:  ''//o nivel em que o membro precisa ter, ex: Administrador, Membro, Dono
+    name:    '',//nome do arquivo
+    aliases: [],//aliases desejadas, isso é: uma segunda forma de execução do comando! Se não desejar nenhuma aliase apenas deixar vázio "[]"
+    desc:    '',//descrição do comando
+    usage:   '',//forma de utilização
+    grupo:   '',//grupo em que se encontra o comando, ex: Administração,
+    membro:  '',//o nivel em que o membro precisa ter, ex: Administrador, Membro, Dono
   },
   run: async(bot, message, args) => {
     //o código de seu comando sem utilizar "if (message.content.startWith('')) {}"
