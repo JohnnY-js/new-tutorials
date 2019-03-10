@@ -1,0 +1,15 @@
+{
+  "name": "newzinho",
+  "version": "1.0.0",
+  "description": "bot criado em javascript com exemplos dos tutoriais",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "fs": "0.0.1-security"
+  }
+}
