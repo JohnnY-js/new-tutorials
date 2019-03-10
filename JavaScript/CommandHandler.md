@@ -28,7 +28,8 @@ fs.readdir('./commands', (erro, file) => {
 Agora para o evento de **message** importar os comandos você deve colocar:
 ```js
 bot.on('message', message => {
-	let args = message.content.split(' ');
+  if (!message.content.startsWith(prefixo)) return //Não processa mensagens que não começa com o prefixo do bot.
+  let args = message.content.split(' ');
   let comando = args.shift().slice(config.prefix.length).toLowerCase();
   
   let cmd = bot.commands.get(comando) || bot.commands.get(bot.aliases.get(comando));
